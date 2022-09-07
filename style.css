@@ -23,6 +23,9 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-size: 13px;
+
+  display: grid;
+  place-content: center;
 }
 
 img {
@@ -32,8 +35,8 @@ img {
 
 /* Container */
 .testimonial {
-  max-width: 1440px;
-  margin: 100px auto;
+  /* max-width: 1440px;
+  margin: 100px auto; */
   padding: 20px;
 }
 
@@ -43,7 +46,7 @@ img {
   border-radius: 10px;
   padding: 30px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card__header {
@@ -93,6 +96,7 @@ img {
   background: var(--prim-clr-dark-blue);
   color: var(--prim-clr-white);
 }
+
 /* Footer */
 .attribution {
   font-size: 11px;
@@ -107,8 +111,12 @@ img {
   .testimonial {
     max-width: 1440px;
     display: grid;
-    gap: 15px;
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    margin-bottom: 0;
   }
 
   .card:nth-of-type(1) {
